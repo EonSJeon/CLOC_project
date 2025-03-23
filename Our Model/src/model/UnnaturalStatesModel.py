@@ -71,7 +71,7 @@ class UnnaturalStates(nn.Module):
 if __name__ == "__main__":
     torch.autograd.set_detect_anomaly(True)
     # Get Stanley Data
-    y_data, _, _ = process_stanley_data("/Users/sakethkoona/Documents/Research/SIPLab/AB020_3_Proc.nwb") 
+    y_data, _, _ = process_stanley_data("../../data/AB020_3_Proc.nwb") 
     train_y, test_y = y_data[:500], y_data[500:1000]
 
     print(y_data[0]) # (, 32)
